@@ -1,0 +1,632 @@
+body{
+    background-color: rgb(0, 10, 39);
+}
+/* ---------------------------------------------------------------Navigation Bar-------------------------------------------------- */
+
+
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    height:10%;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    display:inline-flex;
+    margin-left: 1rem;
+    font-family: sans-serif;
+
+}
+.i-1{
+    color:grey;
+    margin-left: -2rem;
+    font-size: 2rem;
+}
+.i-2{
+    color: cornsilk; 
+    margin-left:1.75rem;
+    font-size: 1.75rem;
+}
+.nav-bar input{
+    background-color: rgb(5, 26, 90);
+    border-radius: 25px;
+    border-color: transparent;
+    margin-left: 10rem;
+    font-size: 30px;
+    color: white;
+}
+.nav-bar>img{
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-left:42px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:1350px){         /*--------------This is for Responsivness--------------*/
+    .nav-bar a{
+    font-size:1rem;
+    }
+    .nav-bar input{
+        display: none;
+    }
+    .i-1{
+        display: none;
+    }
+    .i-2{
+        font-size: 1rem;
+    }
+    .nav-bar img{
+        width: 3.5rem;
+        height: 3.5rem;  
+    }
+}
+
+
+/* ------------------------------------------------------------------Aside Section---------------------------------------------------------------------------------- */
+
+.aside{
+    width: 25%;
+    float:right;
+    margin-right: -4px;
+    overflow: auto;           /*---------------This is for scroling-----------*/
+    height: 73rem;
+}
+.aside h2{
+    color: white;
+    margin-top:5px;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+.aside select{
+    border-color: transparent;
+    background-color: rgb(0, 10, 39);
+    color: rgb(18, 212, 109);
+    margin-left: 10rem;
+    margin-top: -45px;
+    margin-right: 1rem;
+    outline: none;
+    position: absolute;
+}
+
+
+
+.aside-list img{
+    width:3rem;
+    height: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    border-radius: 5%;
+}
+.aside-list li{
+    /* margin-left:20px; */
+    margin-top:20px;
+    margin-bottom:5px;
+
+}
+.aside-list h4{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.aside-list p{
+    margin-top: -30px;
+    margin-left: 20px;
+    color: grey;
+    font-family: sans-serif;
+}
+.aside-list i{
+    font-size: 1.6rem;
+    margin-top: 15px;
+    margin-left: 70px;
+    color: grey;
+}
+.aside-list ol li{
+    display: flex;
+}
+@media (max-width:1350px){
+    .aside-list i{
+        font-size: 1rem;
+        margin-left:10px;
+    }
+    .aside-list img{
+        height: 2rem;
+        width: 2rem;
+        margin-left: -38px;
+    }
+    .aside-list h4{
+        font-size: 12px;
+        margin-left: 4px;
+    }
+    .aside-list p{
+        font-size: 10px;
+        margin-left: 2px;
+    }
+    .aside h2{
+        font-size: 15px;
+    }
+    .aside select{
+        margin-right: 2rem;
+        margin-left: -1px;
+        margin-top: -12px;
+    }
+
+}
+
+
+
+                                        /* --------------------This is for hovering------------------ */
+.aside-list img:hover{
+    transform: scale(1.3,1.3);
+}
+.aside-list h4:hover{
+    transform: scale(1.2,1.2);
+}
+.aside-list p:hover{
+    transform: scale(1.2,1.2);
+}
+
+/* ----------------------------------------------------------------Header(3Divs)------------------------------------------------------------------------ */
+.outer{
+    height: 73rem;
+    overflow: scroll;
+    position: relative;
+   
+}
+.header-2{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    margin-left: -7px;
+    
+}
+
+.container {
+    top: 60px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .card {
+    min-height: 100px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+  }
+  .card img{
+    width: 100%;
+    height:100%;
+  }
+
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    transform: translateY(5px);
+    transition: 0.4s ease-out;
+  }
+  @media (max-width:768px){
+      .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    }
+        .card {
+        min-height: 70px;
+        margin: 1rem 0;
+        }
+  }
+
+
+
+
+
+
+/*--------------------------------------------------------Section(4Divs latest release)----------------------------------------------------------------- */
+
+.section{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    justify-content:space-around;
+}
+/* .section-img{
+    display: flex;
+    width: 100px;
+    height:100px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: -18.5rem;                             /*---------------Important for your concept-----margin-right:200px;--
+    /* margin-right: 15rem;/*                          /*---------------Important for your concept-----margin-right:200px;--*/
+    /* margin-bottom: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+} */ 
+
+.section-img img{
+    width:8rem;
+    height: 8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -80px;
+}
+.section-img h4{
+    margin-top: 45px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    color: white;
+}
+.section-img p{
+    margin-top: -30px;
+    margin-left: 20px;
+    color: grey;
+    font-family: sans-serif;
+}
+.section-img i{
+    font-size: 1.5rem;
+    margin-top: 7px;
+    margin-left: -40px;
+    margin-right: 20px;
+    color: white;
+}
+.section-img ol li{
+    display: flex;
+}
+.section-img select{
+    border-color: transparent;
+    background-color: rgb(0, 10, 39);
+    color: white;
+    float: right;
+    margin-top: 10px;
+    margin-right: 1rem;
+    outline: none;
+}
+@media (max-width:1350px){
+    .section-img{
+        margin-left: 4rem;
+    }
+}
+                                 /* /--------------This is for Hovering-------1------- */
+
+.Button-1 i{
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: -85px;
+    color:transparent;
+    padding: 10px;
+    font-size: 40px;
+    position: absolute;
+}
+.section-img:hover .Button-1 i{
+    color:rgb(196, 231, 225);
+}
+
+/* -----------------------------------------------------------Popular Artist(circle)------------------------------------------------------------- */
+.Popular-artist{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    justify-content:space-around;
+}
+.artist-img img{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width:9.5rem;
+    height:9.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.artist-img h1{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 42px;
+}
+.Button-2 i{                                   /*-----------This is for hovring-------2----------*/
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    margin-top: -125px;
+    margin-left: 57px;
+    color:transparent;
+    padding: 10px;
+    font-size: 40px;
+    position: absolute;
+}
+.artist-img:hover .Button-2 i{
+    color:rgb(196, 231, 225);
+}
+.artist-img:hover{                             /*----------This is for scaling uo---------*/
+    transform: scale(1.1,1.1);
+}
+
+/* ------------------------------------------------------------Section-one(circle)--------------------------------------- */
+.section-one{
+    background-color: rgb(3, 20, 68); ;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    justify-content:space-around;
+}
+.section-one-img img{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width:6rem;
+    height:6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section-one-img h2{
+    transition: all 0.5s ease-in-out;
+    color: transparent;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: -75px;
+    position: absolute;
+}
+.section-one-img:hover h2{                 /*---------------This is for text hovering-------------*/
+    color:rgb(234, 241, 172);
+}
+/*
+.Button-3 i{
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    margin-top: -85px;
+    margin-left: 32px;
+    color:transparent;
+    padding: 10px;
+    font-size: 20px;
+    position: absolute;
+}                                      /* ------------------This is for Hovering------3-------- */
+/*
+.section-one-img:hover .Button-3 i{
+    color:rgb(196, 231, 225);
+} */
+
+
+.section-one-img:hover{                        /*----------This is for scaling uo---------*/
+    transform: scale(1.3,1.3);
+} 
+/* ---------------------------------------------------Section-two---------------------------------------------------------- */
+.section-two{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    justify-content:space-around;
+}
+.section-two-img img{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width:18rem;
+    height:10rem;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section-two-img h2{
+    transition: all 0.5s ease-in-out;
+    color: transparent;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-top: -120px;
+    margin-left: 100px;
+    position: absolute;
+}
+.section-two-img:hover h2{                        /*---------------This is for text hovering-------------*/
+    color:rgb(196, 231, 225);
+}
+.section-two-img:hover{                         /*----------This is for scaling uo---------*/
+    transform: scale(1.1,1.1);
+}
+/*-----------------------------------------------------Section Three---------------------------------------------------------------- */
+.section-three{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    justify-content:space-around;
+}
+.section-three-img img{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 2px;
+    width:130px;
+    height:130px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section-three-img h3{
+    color: white;
+    font-family: sans-serif;
+}
+.Button-4 i{                                      /* /--------This is for Hovering------4-------- */
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    margin-top: -110px;
+    margin-left: 43px;
+    color:transparent;
+    padding: 10px;
+    font-size: 40px;
+    position: absolute;
+}
+.section-three-img:hover .Button-4 i{
+    color:rgb(196, 231, 225);
+}
+.section-three-img:hover{                                /*----------This is for scaling uo---------*/
+    transform: scale(1.1,1.1);
+}
+/* ----------------------------------------------------------------Section Four----------------------------------------------------------- */
+.section-four{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-bottom: 2%;
+     
+    justify-content:space-around;
+}
+.section-four-img img{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width:130px;
+    height:130px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section-four-img h3{
+    color: white;
+    margin-left: 35px;
+    font-family: sans-serif;
+}
+.Button-5 i{                                    /* /--------This is for Hovering------5-------- */
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    margin-top: -110px;
+    margin-left: 43px;
+    color:transparent;
+    padding: 10px;
+    font-size: 40px;
+    position: absolute;
+}
+.section-four-img:hover .Button-5 i{
+    color:rgb(196, 231, 225);
+}
+.section-four-img:hover{                                /*----------This is for scaling uo---------*/
+    transform: scale(1.1,1.1);
+}
+/* --------------------------------------------------Audio Section-------------------------------------------- */
+.audio{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgba(53, 50, 50, 0.719);
+    justify-content:space-between;
+    margin-bottom: -10px;
+}
+
+
+.audio-img img{
+    width:4rem;
+    height: 4rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.audio-img li{
+    /* margin-left:20px; */
+    margin-top:20px;
+    /* margin-bottom:5px; */
+    color: white;
+}
+.audio-img h4{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+.audio-img p{
+    margin-top: -30px;
+    margin-left: 20px;
+    color: grey;
+    font-family: sans-serif;
+}
+.audio-img i{
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: 17px;
+    color: grey;
+}
+.audio-img ol li{
+    display: flex;
+}
+
+.Button-6 i{                                     /*----------This is for hovering-------6----------------*/
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: -50px;
+    color:transparent;
+    padding: 10px;
+    font-size: 25px;
+    position: absolute;
+}
+.audio-img:hover .Button-6 i{
+    color:rgb(196, 231, 225);
+}
+.audio-img:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+.play audio{
+    margin-top:30px;  
+}
+
+
+.play-item{
+    display: flex;
+    justify-content: space-around;
+}
+.play-item i{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 15px;
+    margin-left: 10px;
+    color: grey;
+}
+.play-item div{
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+@media (max-width:1350px) {
+    .play audio{
+        margin-left: 7rem;
+    }
+    .play-item{
+        margin-left: 6rem;
+    }
+    .audio-img{
+        margin-left: 4rem;
+    }
+    .audio-img li{
+        margin-left: 52px;
+    }
+}
+
+

@@ -1,0 +1,455 @@
+/* ====================================================This is CSS For file Major Project 1a ============================================================================================= */
+
+
+body{
+    background-color: rgb(0, 10, 39);
+    
+
+}
+/* ----------------------------------------------------------------------Nav bar------------------------------------------------------------------------------ */
+.nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1%;
+    
+}
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    display:inline-flex;
+    margin-left: 1rem;
+    font-family: sans-serif;
+}
+.i-1{
+    color:grey;
+    margin-left: -2rem;
+    font-size: 2rem;
+}
+.i-2{
+    color: cornsilk; 
+    margin-left:1.75rem;
+    font-size: 1.75rem;
+}
+.nav-bar input{
+    background-color: rgb(5, 26, 90);
+    border-radius: 25px;
+    border-color: transparent;
+    margin-left: 10rem;
+    font-size: 30px;
+    color: white;
+}
+.nav-bar>img{
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-left:42px;
+    margin-bottom: 10px;
+}
+@media (max-width:1350px){         /*--------------This is for Responsivness--------------*/
+    .nav-bar a{
+    font-size:1rem;
+    }
+    .nav-bar input{
+        display: none;
+    }
+    .i-1{
+        display: none;
+    }
+    .i-2{
+        font-size: 1rem;
+    }
+    .nav-bar img{
+        width: 3.5rem;
+        height: 3.5rem;  
+    }
+}
+    
+
+/* ------------------------------------------------------------------Aside Section---------------------------------------------------------------------------------- */
+
+.aside{
+    width: 25%;
+    float:right;
+     
+    margin-right: -4px;
+    overflow: auto;
+    height: 700px;
+
+}
+.aside h2{
+    color: white;
+    margin-top:5px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.aside p{
+    color: rgb(152, 228, 187);
+    float: right;
+    margin-top: -50px;
+    margin-right: 1rem;
+    font-family: sans-serif;
+}
+
+
+
+.aside-list-new img{
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    margin-left: -20px;
+}
+.aside-list-new h4{
+    margin-top: 28px;
+    margin-left: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.aside-list-new p{
+    margin-top: -30px;
+    margin-left: 20px;
+    color: grey;
+    font-family: sans-serif;
+}
+.aside-list-new i{
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-left: 70px;
+    color: grey;
+}
+.aside-list-new ol li{
+    display: flex;
+}
+.aside-list-new img:hover{
+    transform: scale(1.2,1.2);
+}
+
+
+
+.aside-list img{
+    width:3rem;
+    height: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    border-radius: 5%;
+}
+.aside-list h4{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.aside-list p{
+    margin-top: -30px;
+    margin-left: 20px;
+    color: grey;
+    font-family: sans-serif;
+}
+.aside-list i{
+    font-size: 1px;
+    margin-top: 15px;
+    margin-left: 80px;
+    color: grey;
+}
+.aside-list ol li{
+    display: flex;
+}
+.aside-list img:hover{
+    transform: scale(1.3,1.3);
+}
+
+@media (max-width:1350px){
+    .aside-list i{
+        font-size: 1rem;
+        margin-left: 33px;
+    }
+    .aside-list h4{
+        margin-left: 6px;
+    }
+    .aside-list img{
+        height: 2rem;
+        width: 2rem;
+        margin-left: -37px;
+    }
+    .aside-list-new i{
+        font-size: 13px;
+        margin-left:10px;
+    }
+    .aside-list-new img{
+        height: 65px;
+        width: 55px;
+        margin-left: 5px;
+    }
+    .aside-list-new ol li{
+        margin-left: -45px;
+    }
+    .aside-list-new h4{
+        margin-left: 4px;
+    }
+    .aside-list-new p{
+        margin-left: 5px;
+    }
+    .aside-list ol li{
+        margin-left: -2px;
+    }
+    .aside h2{
+        font-size: 1rem;
+    }
+    .aside p{
+        font-size: 10px;
+        margin-left: 14px;
+    }
+
+}
+
+
+
+/* -----------------------------------------------------------------Header(Cold Play)------------------------------------------------------------------------------- */
+
+
+.header{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width:auto;
+    margin-bottom: 1%;
+    
+    margin-left: 53px;
+    background-color: rgb(5, 18, 56);
+}
+
+.header-img img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-img-1 img{
+    width: 47%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+
+.header-text{
+    position: relative;
+    
+    width:46%;
+}
+.header-text h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-top: 80px;
+}
+.header-text p{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 4px;
+    margin-top: -15px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: grey;
+    width: auto;
+}
+.header-text button{
+    background: linear-gradient(to top right,rgb(6, 6, 124),rgb(197, 51, 75));
+    color: white;
+    height: 15px;
+    width: 150px;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 25px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+.header-text button:hover{
+    transform: scale(1.1,1.1);
+}
+@media (max-width:1350px) {
+    .header-text Button{
+        margin-left: 50px;
+    }
+    .header-text{
+        width: 100%;
+    }
+    .header-img img{
+        width: 100%;
+    }
+    
+}
+
+    
+
+/* ---------------------------------------------------------------Song- list-------------------------------------------------------------------------- */
+.Song{
+    box-sizing: border-box;
+    width:75%;
+    margin-bottom: 2%;
+    
+    margin-left: -7px;
+}
+.Song-list{
+    
+    background-color: rgba(14, 17, 26, 0.972);
+    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-left: 57px;
+    
+}
+.Song-list img{
+    width:3rem;
+    height: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+.Song-list h4{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.Song-list p{
+    margin-top: -30px;
+    margin-left: 20px;
+    color: grey;
+    font-family: sans-serif;
+}
+.Song-list i{
+    font-size: 1rem;
+    margin-left: 30px;
+    margin-top: 25px;
+    color: grey;
+}
+.Song-list li{
+    display: flex;
+}
+.Song-list:hover{                                 /*-----------------This is for scalling up--------------- */
+    transform: scale(1.02,1.02);
+}
+
+
+
+.div1{
+    margin-left: 670px;     
+                                             /*-----------------This is for font awsm Icons--------------- */
+}
+
+@media (max-width:1350px){
+    .div1{
+        margin-left: 33px;
+    }
+}
+
+
+/* ------------------------------------------------------Audio Section---------------------------------------------------------------------------- */
+.audio{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+     
+    background-color: rgba(53, 50, 50, 0.719);
+    justify-content:space-between;
+    margin-bottom: -10px;
+    
+}
+
+
+.audio-img img{
+    width:4rem;
+    height: 4rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.audio-img h4{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.audio-img p{
+    margin-top: -30px;
+    margin-left: 20px;
+    color: grey;
+    font-family: sans-serif;
+}
+.audio-img i{
+    font-size: 20px;
+    margin-top: 13px;
+    margin-left: 17px;
+    color: grey;
+}
+.audio-img ol li{
+    display: flex;
+}
+.audio-img:hover{
+    transform: scale(1.2,1.2);
+}
+.Button-6 i{                                     /*----------This is for hovering-------6----------------*/
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: -50px;
+    color:transparent;
+    padding: 10px;
+    font-size: 25px;
+    position: absolute;
+}
+.audio-img:hover .Button-6 i{
+    color:rgb(196, 231, 225);
+}
+.audio-img:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+.play audio{
+    margin-top:30px;  
+}
+
+
+.play-item{
+    display: flex;
+    justify-content: space-around;
+}
+.play-item i{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-right: 15px;
+    margin-left: 10px;
+    color: grey;
+}
+.play-item>div{
+    margin-top: 50px;
+    margin-right: 20px;
+    
+}
+
+@media (max-width:1350px) {
+    .play audio{
+        margin-left: 7rem;
+    }
+    .play-item{
+        margin-left: 6rem;
+    }
+    .audio-img{
+        margin-left: 4rem;
+    }
+    .audio-img li{
+        margin-left: 52px;
+    }
+}
